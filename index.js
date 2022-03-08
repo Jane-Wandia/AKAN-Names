@@ -32,3 +32,7 @@ let odhisBaba = document.getElementById('dob').value;
 var jw = document.getElementById ('result');
 
 var gender = document.getElementsByName('gender');
+
+for (let i of gender){
+    if (i.value === "Male"){
+        jw.innerText = (`Your Akan Name is  ${namesMale[day]}`);
