@@ -14,20 +14,20 @@ form.addEventListener ('click', function(event){
 
     event.preventDefault();
 
-    blaise()
+    done()
 
 });
-function blaise(){
+function done(){
 
 if (dob.value == ""){
     alert ('Please Enter Date of Birth');
     return false;
 }
 
-let odhisBaba = document.getElementById('dob').value;
+let odhis = document.getElementById('dob').value;
 
-    let dateOfbirth = new Date (odhisBaba);
-     let day  = dateOfbirth.getDay();
+    let dateOfbirth = new Date (odhis);
+     let day = dateOfbirth.getDay();
 
 var jw = document.getElementById ('result');
 
