@@ -30,3 +30,5 @@ let odhisBaba = document.getElementById('dob').value;
      let day  = dateOfbirth.getDay();
 
 var jw = document.getElementById ('result');
+
+var gender = document.getElementsByName('gender');
