@@ -10,3 +10,10 @@ let namesFemale = ['Akosua','Adwoa','Abena','Akua','Yaa','Afua','Amma']
 
 let form = document.getElementById('btn');
 
+form.addEventListener ('click', function(event){
+
+    event.preventDefault();
+
+    blaise()
+
+});
