@@ -25,8 +25,14 @@
     background-color: rgb(46, 119, 44);
     height: 300px;
     width: 400px;
-    text align-center;
+    text-align: center;
     margin-left: 45%;
-    margin margin-top: 10%;
+    margin-top: 10%;
     padding: 20px;
+}
+
+#book{
+    font-size: 40px;
+    color:black;
+    font-weight: 400;
 }
