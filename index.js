@@ -36,3 +36,14 @@ var gender = document.getElementsByName('gender');
 for (let i of gender){
     if (i.value === "Male"){
         jw.innerText = (`Your Akan Name is  ${namesMale[day]}`);
+    } else{
+        jw.innerText=(`Your Akan Name is  ${namesFemale[day]}`);
+    };
+};
+
+
+
+
+
+
+};
