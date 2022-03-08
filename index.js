@@ -17,3 +17,8 @@ form.addEventListener ('click', function(event){
     blaise()
 
 });
+
+if (dob.value == ""){
+    alert ('Please Enter Date of Birth');
+    return false;
+}
