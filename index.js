@@ -1,0 +1,5 @@
+
+let daysWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+
+
+
