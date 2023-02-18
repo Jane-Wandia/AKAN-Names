@@ -6,7 +6,7 @@
 }
 
 .container{
-    background-color: rgb(255, 127, 155); 
+    background-image: image("pexels-dazzle-jam-1038043 jpg"); 
     height: 100vh;
     width: 100vh;
     display: flex;

@@ -1,49 +1,92 @@
 
-let daysWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+let maleNames =[ 'Kwasi','Kwadwo', 'Kwabena','Kwaku','Yaw','Kofi','kwame']
 
-let namesMale = ['Kwasi','Kwadwo','Kwabena','Kwaku','Yao','Kofi','Kwame']
+let femaleNames= ['Akosua','Adwoa','Abenaa','Akua','Yaa', 'Afua','Ama']
 
-let namesFemale = ['Akosua','Adwoa','Abena','Akua','Yaa','Afua','Amma']
+let Days = ['Sunday','Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday']
 
 
-// communicating with the form
 
-let form = document.getElementById('btn');
 
-form.addEventListener ('click', function(event){
 
-    event.preventDefault();
+let form = document.getElementById('sbb');
 
-    done()
+
+form.addEventListener('click', function(event){
+
+event.preventDefault();
+
+calling();
 
 });
-function done(){
 
-if (dob.value == ""){
-    alert ('Please Enter Date of Birth');
+
+function calling() {
+
+
+  
+
+
+  if (datedate.value == "") {
+    alert("Date must be filled out");
     return false;
+  }
+
+
+  let dateOfBirth = document.getElementById('datedate').value;
+  
+  let birthDay = new Date(dateOfBirth);
+  let day = birthDay.getDay();
+
+  
+  var z = document.getElementById('para');
+  // z.innerText = "Your Akan Name is" +  ;
+
+  let gender = document.getElementsByName('gender');
+
+ for(let i of gender){
+  if (i.value === 'Male') {
+    z.innerText= (`Your Akan Name is ${maleNames[day]}`);
+  } else {
+    z.innerText= (`Your Akan Name is ${femaleNames[day]}`);
+  }
 }
 
-let odhis = document.getElementById('dob').value;
-
-    let dateOfbirth = new Date (odhis);
-     let day = dateOfbirth.getDay();
-
-var jw = document.getElementById ('result');
-
-var gender = document.getElementsByName('gender');
-
-for (let i of gender){
-    if (i.value === "Male"){
-        jw.innerText = (`Your Akan Name is  ${namesMale[day]}`);
-    } else{
-        jw.innerText=(`Your Akan Name is  ${namesFemale[day]}`);
-    };
-};
-
-
-
-
-
 
 };
+
+
+
+
+
+
+
+
+
+
+
+
+// const calender = document.getElementById('datedate').value;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
